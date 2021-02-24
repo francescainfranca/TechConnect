@@ -9,7 +9,7 @@ font-family: 'Numans', sans-serif;
 }
 
 .container{
-height: 100%;
+height: 150%;
 align-content: center;
 }
 
@@ -44,7 +44,7 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #FFC312;
+background-color: #259e65;
 color: black;
 border:0 !important;
 }
