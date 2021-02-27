@@ -1,0 +1,47 @@
+.menu-content{
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0 0 50px;
+}
+
+.collapsible-menu{
+    background-color: rgb(255, 255, 255);
+    padding: 0px 30px;
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.collapsible-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.collapsible-menu a{
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+}
+
+.collapsible-menu label{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    display: inline-block;
+    cursor: pointer;
+    /*background: url(menu.png) no-repeat left center;*/
+    padding: 10px 0px 10px 50px;
+}
+
+input#menu {
+    display: none;
+}
+
+.menu-content{
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald' sans-serif;
+    padding: 0 0 0 50px;
+}
+
+input:checked ~ .menu-content{
+    max-height: 100%;    
+}
+
