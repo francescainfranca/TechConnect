@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student View</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <!--<div class="logo">
+                <img src="nwLogo.jpg" alt = "">
+            </div>-->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Check Application Status</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; NORTHWEST</span>
+
+        <script>
+            function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            }
+            </script>
+    </header>
+
+    <div class="banner-area">
+        <h2>opportunities lie ahead</h2>
+        <button >contact us</button>
+    </div>
+    <div class="content-area">
+        <div class="wrapper">
+            <h2>our mission</h2>
+            <p>
+                "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+            </p>
+        </div>
+    </div>
+</body>
+</html>
