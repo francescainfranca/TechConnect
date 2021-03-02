@@ -13,13 +13,13 @@
 
         <h1>Contact Us</h1>
         <div class="border"></div>
-        <form class="contact-form" onsubmit="sendEmail();" method="post">
+        <form class="contact-form" method="post">
             <input type="text" class="contact-form-text" id="userName" placeholder="Your name">
             <input type="email" class="contact-form-text" id="userEmail" placeholder="Your email">
             <input type="password" class="contact-form-text" id="userPassword" placeholder="Your password">
             <input type="text" class="contact-form-text" id="userNumber" placeholder="Your phone">
             <textarea class="contact-form-text" id="userMessage" placeholder="Your message"></textarea>
-            <input type="submit" class="contact-form-btn" value="Send">
+            <input type="submit" class="contact-form-btn" onclick="sendEmail();" value="Send">
         </form>
     </div>
 
@@ -33,19 +33,10 @@
             var userPassword=document.getElementById("userPassword").value;
             var userNumber=document.getElementById("userNumber").value;
             var userMessage=document.getElementById("userMessage").value;
+            var alertMessage;
 
-            Email.send({ 
-                Host: "smtp.gmail.com", 
-                Username: userEmail, 
-                Password: userPassword, 
-                To: 'receiver@email_address.com', 
-                From: userEmail, 
-                Subject: userName+" wants to contact", 
-                Body: userMessage, 
-            }) 
-                .then(function (message) { 
-                alert("mail sent successfully") 
-                }); 
+            
+            
         } 
       </script> 
 </body>
