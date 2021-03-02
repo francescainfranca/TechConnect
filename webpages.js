@@ -11,7 +11,7 @@ document.onclick = function(){
 
 
 function openNav() {
-document.getElementById("myNav").style.width = "25%";
+document.getElementById("myNav").style.width = "100%";
     navOpened=true;
 }
 
