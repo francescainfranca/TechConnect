@@ -146,3 +146,64 @@ button:hover {
     color:white; 
 }
 
+#stuID {
+    margin-left: 15%;
+    margin-top: none;
+}
+
+#fname {
+    margin-left: 15%;
+}
+
+#lnametext {
+    margin-left: 5%;
+    
+}
+
+#lname {
+    margin-left:11%;
+}
+
+#email {
+    margin-left: 15%;
+}
+
+#phone {
+    margin-left: 8%;
+}
+
+#phonetext{
+    margin-left: 5%;
+}
+
+#address1 {
+    margin-left: 15%;
+}
+
+#address2 {
+    margin-left: 15%;
+}
+
+#city {
+    margin-left: 15%;
+}
+
+#state{
+    margin-left: 15%;
+}
+
+#stateselect {
+    margin-left: 5%;
+}
+
+#zip {
+    margin-left: 12%;
+}
+
+#ziptext {
+    margin-left: 5%;
+}
+
+#comments {
+    margin-left: 15%;
+}
