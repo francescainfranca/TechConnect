@@ -145,8 +145,13 @@ button:hover {
     background:black;
     color:white; 
 }
+
+/* Form CSS Below*/
+
 #stuID-text {
     margin-left: 15%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 #stuID {
     margin-left: 15%;
@@ -154,6 +159,8 @@ button:hover {
 
 #fname-text {
     margin-left: 15%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #fname {
@@ -161,7 +168,9 @@ button:hover {
 }
 
 #lname-text {
-    margin-left: 11%;
+    margin-left: 11.5%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
     
 }
 
@@ -171,6 +180,8 @@ button:hover {
 
 #email-text {
     margin-left: 15%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #email {
@@ -182,11 +193,15 @@ button:hover {
 }
 
 #phone-text{
-    margin-left: 8%;
+    margin-left: 9%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #address1-text {
     margin-left: 15%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #address1 {
@@ -195,6 +210,8 @@ button:hover {
 
 #address2-text {
     margin-left: 15%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #address2 {
@@ -203,6 +220,8 @@ button:hover {
 
 #city-text {
     margin-left: 15%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #city {
@@ -211,6 +230,8 @@ button:hover {
 
 #state-text {
     margin-left: 15%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #state {
@@ -222,7 +243,9 @@ button:hover {
 }
 
 #zip-text {
-    margin-left: 12%;
+    margin-left: 12.5%;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }
 
 #zip {
@@ -231,5 +254,6 @@ button:hover {
 
 #comments {
     margin-left: 15%;
-    font-family: sans-serif;
+    font-family: 'Open-Sans';
+    letter-spacing: 1px;
 }

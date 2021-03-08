@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 @import url('http://fonts.cdnfonts.com/css/bignoodletitling');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 
 body {
     font-family:'Poppins';
@@ -145,3 +147,34 @@ button:hover {
     background:black;
     color:white; 
 }
+
+#instructorEmail-text {
+  margin-left: 15%;
+  font-family: 'Open-Sans';
+  letter-spacing: 1px;
+}
+
+#instructorEmail {
+  margin-left: 15%;
+}
+
+#instructorFname-text {
+  margin-left: 15%;
+  font-family: 'Open-Sans';
+  letter-spacing: 1px;
+}
+
+#instructorFname {
+  margin-left: 15%;
+}
+
+#instructorLname-text {
+  margin-left: 15%;
+  font-family: 'Open-Sans';
+  letter-spacing: 1px;
+}
+
+#instructorLname {
+  margin-left: 15%;
+}
+
