@@ -10,6 +10,15 @@ body {
     background-size: cover;
   }
 
+  .navbar {
+    font-size:1.15rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+    z-index:1;
+    margin: 0;
+    }
+
   header {
       height: 65px;
       background: #094e07;
