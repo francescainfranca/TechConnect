@@ -15,26 +15,14 @@ body {
       background: #094e07;
       width: 100%;
       z-index: 10;
-      position: relative;
+      position: fixed;
+      overflow-x: hidden;
   }
 
 * {
     margin: 0;
     padding: 0;
 }
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
   
   .overlay-content {
     position: relative;
@@ -257,3 +245,16 @@ button:hover {
     font-family: 'Open-Sans';
     letter-spacing: 1px;
 }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    position: fixed;
+    transition: 0.5s;
+  }
