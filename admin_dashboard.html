@@ -1,33 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student View</title>
-    <link rel="stylesheet" href="student.css">
-    <script src="webpages.js"></script>
-</head>
-<body>
-    <header>
-        <div class="wrapper">
-            <!--<div class="logo">
-                <img src="nwLogo.jpg" alt = "">
-            </div>-->
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                <a href="#">Home</a>
-                <a href="#">Dashboard</a>
-                <a href="#">Check Applicants</a>
-                <a href="#">About</a>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="student.css">
+        <script src="webpages.js"></script>
+        <link rel="stylesheet" href="side_gui.css"></style>
+        <link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Bootstrap 4.5 CSS -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="dashboard.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chakra+Petch:wght@500;700&family=Didact+Gothic&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+    
+        <header>
+            <div class="wrapper">
+                <!--<div class="logo">
+                    <img src="nwLogo.jpg" alt = "">
+                </div>-->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                    <a href="student_dashboard.html">Dashboard</a>
+                    <a href="internship_status.html">Apply for an Internship</a>
+                    <a href="student_application2.html">Check Application Status</a>
+                    <a href="contact.html">Contact us</a>
+                    </div>
                 </div>
             </div>
+
+           
+            <div class="top-bar">
+                <div class="col text-right">
+                    <p><a href="student_dashboard.html"><i class="fas fa-user"></i> username</a></p>
+                </div>
+            </div>
+            
+
+        </header>
+
+    </head>
+    <body>
+    
+        <!-- Top Bar -->
+    
+    
+        <!-- End Top Bar -->
+    
+    
+        <!-- Navigation -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg container">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="logo1.png" alt="Logo" title="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+    
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="student.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="student_dashboard.html" class="nav-link"><b>Dashboard</b></a></li>
+                    <li class="nav-item"><a href="student.html" class="nav-link">Students</a></li>
+                    <li class="nav-item"><a href="student_application.html" class="nav-link">Application Status</a></li>
+                    
+
+                    
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; NORTHWEST</span>
+        <div class="main">
+             
+        </div>
+        <div class="row-m bg-light navbar-light navbar-expand-lg container">
+            
+            <div class="col-md-12 offset-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <html>
+                        <head>
+                          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                          <script type="text/javascript">
+                            google.charts.load('current', {
+                              'packages':['geochart'],
+                              // Note: you will need to get a mapsApiKey for your project.
+                              // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+                              'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+                            });
+                            google.charts.setOnLoadCallback(drawRegionsMap);
+                      
+                            function drawRegionsMap() {
+                              var data = google.visualization.arrayToDataTable([
+                                ['Country', 'Popularity'],
+                                ['Germany', 15],
+                                ['United States', 50],
+                                ['Brazil', 20],
+                                ['Canada', 50],
+                                ['France', 6],
+                                ['Nepal', 30],
+                                ['India', 50],
+                                ['Nigeria', 10],
+                                ['China',10],
+                                ['Australia', 10],
+                                ['Russia',1]
+                              ]);
+                      
+                              var options = { 'width':800, 'height':400};
+                      
+                              var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+                      
+                              chart.draw(data, options);
+                            }
+                          </script>
+                        </head>
+                        <body>
+                          <div id="regions_div" style="width: 900px; height: 500px;"></div>
+                        </body>
+                      </html>
+                      
+                  
+                  </div>
+                </div>
+              </div>
+          </div>
+    </body>
 
-    </header>
-
-</body>
 </html>
