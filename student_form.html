@@ -1,410 +1,84 @@
-<!DOCTYPE HTML>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="favicon.ico">
-
-</head>
-
-<body>
-<form class="" action="" id="id='210677446881162'" accept-charset="utf-8" autocomplete="on">
-  <input type="hidden" name="formID" value="210677446881162" />
-  <input type="hidden" id="JWTContainer" value="" />
-  <input type="hidden" id="cardinalOrderNumber" value="" />
-  <div role="main" class="form-all">
-    <ul class="form-section page-section">
-      <li id="cid_1" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-large">
-          <div class="header-text httac htvam">
-            <h1 id="header_1" class="form-header" data-component="header">
-              New Application
-            </h1>
-          </div>
-        </div>
-      </li>
-      <li id="cid_21" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-small">
-          <div class="header-text httal htvam">
-            <h3 id="header_21" class="form-header" data-component="header">
-              Student Information
-            </h3>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_textbox" id="id_17">
-        <label class="form-label form-label-top form-label-auto" id="label_17" for="input_17">
-          Student ID
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_17" class="form-input-wide jf-required" data-layout="half">
-          <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="text" id="input_17" name="q17_studentId17" data-type="input-textbox" class="form-textbox validate[required, Numeric]" style="width:310px" size="310" value="" maxLength="9" placeholder="919######" data-component="textbox" aria-labelledby="label_17 sublabel_input_17" required="" />
-            <label class="form-sub-label" for="input_17" id="sublabel_input_17" style="min-height:13px" aria-hidden="false"> 919 number </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_fullname" id="id_3">
-        <label class="form-label form-label-top form-label-auto" id="label_3" for="first_3">
-          Full Name
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
-          <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              <input type="text" id="first_3" name="q3_fullName3[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
-              <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false"> First Name </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
-              <input type="text" id="last_3" name="q3_fullName3[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last" required="" />
-              <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_email" id="id_6">
-        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6"> E-mail </label>
-        <div id="cid_6" class="form-input-wide" data-layout="half">
-          <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="email" id="input_6" name="q6_email6" class="form-textbox validate[Email]" style="width:310px" size="310" value="" placeholder="ex: email@yahoo.com" data-component="email" aria-labelledby="label_6 sublabel_input_6" />
-            <label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px" aria-hidden="false"> example@example.com </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_phone" id="id_5">
-        <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5_full">
-          Phone Number
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_5" class="form-input-wide jf-required" data-layout="half">
-          <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="tel" id="input_5_full" name="q5_phoneNumber5[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5" required="" />
-            <label class="form-sub-label is-empty" for="input_5_full" id="sublabel_5_masked" style="min-height:13px" aria-hidden="false">  </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_address" id="id_4">
-        <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4_addr_line1">
-          Address
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_4" class="form-input-wide jf-required" data-layout="full">
-          <div summary="" class="form-address-table jsTest-addressField">
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-street-line jsTest-address-lineField">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_4_addr_line1" name="q4_address4[addr_line1]" class="form-textbox validate[required] form-address-line" value="" data-component="address_line_1" aria-labelledby="label_4 sublabel_4_addr_line1" required="" />
-                  <label class="form-sub-label" for="input_4_addr_line1" id="sublabel_4_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
-                </span>
-              </span>
-            </div>
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-street-line jsTest-address-lineField">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_4_addr_line2" name="q4_address4[addr_line2]" class="form-textbox form-address-line" value="" data-component="address_line_2" aria-labelledby="label_4 sublabel_4_addr_line2" />
-                  <label class="form-sub-label" for="input_4_addr_line2" id="sublabel_4_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
-                </span>
-              </span>
-            </div>
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_4_city" name="q4_address4[city]" class="form-textbox validate[required] form-address-city" value="" data-component="city" aria-labelledby="label_4 sublabel_4_city" required="" />
-                  <label class="form-sub-label" for="input_4_city" id="sublabel_4_city" style="min-height:13px" aria-hidden="false"> City </label>
-                </span>
-              </span>
-              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_4_state" name="q4_address4[state]" class="form-textbox validate[required] form-address-state" value="" data-component="state" aria-labelledby="label_4 sublabel_4_state" required="" />
-                  <label class="form-sub-label" for="input_4_state" id="sublabel_4_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
-                </span>
-              </span>
-            </div>
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_4_postal" name="q4_address4[postal]" class="form-textbox validate[required] form-address-postal" value="" data-component="zip" aria-labelledby="label_4 sublabel_4_postal" required="" />
-                  <label class="form-sub-label" for="input_4_postal" id="sublabel_4_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_textarea" id="id_11">
-        <label class="form-label form-label-top form-label-auto" id="label_11" for="input_11"> Comments: </label>
-        <div id="cid_11" class="form-input-wide" data-layout="full">
-          <textarea id="input_11" class="form-textarea" name="q11_comments" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_11"></textarea>
-        </div>
-      </li>
-      <li id="cid_20" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-small">
-          <div class="header-text httal htvam">
-            <h3 id="header_20" class="form-header" data-component="header">
-              Employer Information
-            </h3>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_fullname" id="id_22">
-        <label class="form-label form-label-top form-label-auto" id="label_22" for="first_22">
-          Employer Name
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_22" class="form-input-wide jf-required" data-layout="full">
-          <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              <input type="text" id="first_22" name="q22_employerName22[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_22 sublabel_22_first" required="" />
-              <label class="form-sub-label" for="first_22" id="sublabel_22_first" style="min-height:13px" aria-hidden="false"> First Name </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
-              <input type="text" id="last_22" name="q22_employerName22[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_22 sublabel_22_last" required="" />
-              <label class="form-sub-label" for="last_22" id="sublabel_22_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_fullname" id="id_25">
-        <label class="form-label form-label-top form-label-auto" id="label_25" for="first_25">
-          Primary Contact
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_25" class="form-input-wide jf-required" data-layout="full">
-          <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              <input type="text" id="first_25" name="q25_primaryContact25[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_25 sublabel_25_first" required="" />
-              <label class="form-sub-label" for="first_25" id="sublabel_25_first" style="min-height:13px" aria-hidden="false"> First Name </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
-              <input type="text" id="last_25" name="q25_primaryContact25[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_25 sublabel_25_last" required="" />
-              <label class="form-sub-label" for="last_25" id="sublabel_25_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_email" id="id_26">
-        <label class="form-label form-label-top form-label-auto" id="label_26" for="input_26">
-          Employer Email
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_26" class="form-input-wide jf-required" data-layout="half">
-          <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="email" id="input_26" name="q26_employerEmail26" class="form-textbox validate[required, Email]" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_26 sublabel_input_26" required="" />
-            <label class="form-sub-label" for="input_26" id="sublabel_input_26" style="min-height:13px" aria-hidden="false"> example@example.com </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_phone" id="id_27">
-        <label class="form-label form-label-top form-label-auto" id="label_27" for="input_27_full">
-          Employer Phone Number
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
-          <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="tel" id="input_27_full" name="q27_employerPhone27[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_27 sublabel_27_masked" required="" />
-            <label class="form-sub-label" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false"> Please enter a valid phone number. </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_address" id="id_28">
-        <label class="form-label form-label-top form-label-auto" id="label_28" for="input_28_addr_line1">
-          Employer Location
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_28" class="form-input-wide jf-required" data-layout="full">
-          <div summary="" class="form-address-table jsTest-addressField">
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-street-line jsTest-address-lineField">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_28_addr_line1" name="q28_employerLocation[addr_line1]" class="form-textbox validate[required] form-address-line" value="" data-component="address_line_1" aria-labelledby="label_28 sublabel_28_addr_line1" required="" />
-                  <label class="form-sub-label" for="input_28_addr_line1" id="sublabel_28_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
-                </span>
-              </span>
-            </div>
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-street-line jsTest-address-lineField">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_28_addr_line2" name="q28_employerLocation[addr_line2]" class="form-textbox form-address-line" value="" data-component="address_line_2" aria-labelledby="label_28 sublabel_28_addr_line2" />
-                  <label class="form-sub-label" for="input_28_addr_line2" id="sublabel_28_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
-                </span>
-              </span>
-            </div>
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_28_city" name="q28_employerLocation[city]" class="form-textbox validate[required] form-address-city" value="" data-component="city" aria-labelledby="label_28 sublabel_28_city" required="" />
-                  <label class="form-sub-label" for="input_28_city" id="sublabel_28_city" style="min-height:13px" aria-hidden="false"> City </label>
-                </span>
-              </span>
-              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_28_state" name="q28_employerLocation[state]" class="form-textbox validate[required] form-address-state" value="" data-component="state" aria-labelledby="label_28 sublabel_28_state" required="" />
-                  <label class="form-sub-label" for="input_28_state" id="sublabel_28_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
-                </span>
-              </span>
-            </div>
-            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
-              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <input type="text" id="input_28_postal" name="q28_employerLocation[postal]" class="form-textbox validate[required] form-address-postal" value="" data-component="zip" aria-labelledby="label_28 sublabel_28_postal" required="" />
-                  <label class="form-sub-label" for="input_28_postal" id="sublabel_28_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_datetime" id="id_29">
-        <label class="form-label form-label-top form-label-auto" id="label_29" for="lite_mode_29">
-          Start Date
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_29" class="form-input-wide jf-required" data-layout="half">
-          <div data-wrapper-react="true">
-            <div style="display:none">
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_29" name="q29_startDate[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_29 sublabel_29_month" />
-                <span class="date-separate" aria-hidden="true">
-                   -
-                </span>
-                <label class="form-sub-label" for="month_29" id="sublabel_29_month" style="min-height:13px" aria-hidden="false"> Month </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_29" name="q29_startDate[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_29 sublabel_29_day" />
-                <span class="date-separate" aria-hidden="true">
-                   -
-                </span>
-                <label class="form-sub-label" for="day_29" id="sublabel_29_day" style="min-height:13px" aria-hidden="false"> Day </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_29" name="q29_startDate[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_29 sublabel_29_year" />
-                <label class="form-sub-label" for="year_29" id="sublabel_29_year" style="min-height:13px" aria-hidden="false"> Year </label>
-              </span>
-            </div>
-            <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_29" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="off" aria-labelledby="label_29 sublabel_29_litemode" />
-              <label class="form-sub-label" for="lite_mode_29" id="sublabel_29_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_datetime" id="id_31">
-        <label class="form-label form-label-top form-label-auto" id="label_31" for="lite_mode_31">
-          End Date
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_31" class="form-input-wide jf-required" data-layout="half">
-          <div data-wrapper-react="true">
-            <div style="display:none">
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="month_31" name="q31_endDate[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_31 sublabel_31_month" />
-                <span class="date-separate" aria-hidden="true">
-                   -
-                </span>
-                <label class="form-sub-label" for="month_31" id="sublabel_31_month" style="min-height:13px" aria-hidden="false"> Month </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="day_31" name="q31_endDate[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" required="" autoComplete="off" aria-labelledby="label_31 sublabel_31_day" />
-                <span class="date-separate" aria-hidden="true">
-                   -
-                </span>
-                <label class="form-sub-label" for="day_31" id="sublabel_31_day" style="min-height:13px" aria-hidden="false"> Day </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[required, limitDate]" id="year_31" name="q31_endDate[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" required="" autoComplete="off" aria-labelledby="label_31 sublabel_31_year" />
-                <label class="form-sub-label" for="year_31" id="sublabel_31_year" style="min-height:13px" aria-hidden="false"> Year </label>
-              </span>
-            </div>
-            <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_31" size="12" data-maxlength="12" maxLength="12" data-age="" value="" required="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="off" aria-labelledby="label_31 sublabel_31_litemode" />
-              <label class="form-sub-label" for="lite_mode_31" id="sublabel_31_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li id="cid_32" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-small">
-          <div class="header-text httal htvam">
-            <h3 id="header_32" class="form-header" data-component="header">
-              Instructor Information
-            </h3>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_email" id="id_33">
-        <label class="form-label form-label-top form-label-auto" id="label_33" for="input_33">
-          Instructor Mail
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_33" class="form-input-wide jf-required" data-layout="half">
-          <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="email" id="input_33" name="q33_instructorMail" class="form-textbox validate[required, Email]" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_33 sublabel_input_33" required="" />
-            <label class="form-sub-label" for="input_33" id="sublabel_input_33" style="min-height:13px" aria-hidden="false"> example@example.com </label>
-          </span>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_fullname" id="id_34">
-        <label class="form-label form-label-top form-label-auto" id="label_34" for="first_34">
-          Instructor Name
-          <span class="form-required">
-            *
-          </span>
-        </label>
-        <div id="cid_34" class="form-input-wide jf-required" data-layout="full">
-          <div data-wrapper-react="true">
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              <input type="text" id="first_34" name="q34_instructorName[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_34 sublabel_34_first" required="" />
-              <label class="form-sub-label" for="first_34" id="sublabel_34_first" style="min-height:13px" aria-hidden="false"> First Name </label>
-            </span>
-            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
-              <input type="text" id="last_34" name="q34_instructorName[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_34 sublabel_34_last" required="" />
-              <label class="form-sub-label" for="last_34" id="sublabel_34_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
-            </span>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_button" id="id_2">
-        <div id="cid_2" class="form-input-wide" data-layout="full">
-          <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
-            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-              Submit
-            </button>
-          </div>
-        </div>
-      </li>
-      <li style="display:none">
-        Should be Empty:
-        <input type="text" name="website" value="" />
-      </li>
-    </ul>
-  </div>
-  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="210677446881162" />
-  <script type="text/javascript">
-
-  </script>
-  <div class="formFooter-heightMask">
-  </div>
-</form></body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>New Application Form</title>
+  </head>
+  <body>
+    <h1>New Application</h1>
+    <form id="student" action="">
+      <h2>Student Information</h2>
+      <label for="Student ID">Student ID:<br>
+      </label><input id="Student ID" size="80px" required="required" placeholder="919######"
+        type="text"><br>
+      <label for="Student First Name">First Name:<br>
+      </label><input id="Student First Name" required="required" size="80px" type="text"><br>
+      <label for="Student Last Name">Last Name:<br>
+      </label><input id="Student Last Name" required="required" size="80px" type="text"><br>
+      <label for="Student Email">Email:<br>
+      </label><input id="Student Email" size="80px" placeholder="ex: email@yahoo.com"
+        required="required" type="email"><br>
+      <label for="Student Phone">Phone Number:<br>
+      </label><input id="Student Phone" placeholder="(555)555-5555" required="required"
+        size="80px" type="tel"><br>
+      <br>
+      <label for="Student Street Address">Address Line 1:<br>
+      </label> <input id="Student Street Address" required="required" size="80px"
+        type="text"><br>
+      <label for="Student Address line 2">Address Line 2:</label><br>
+      <input id="Student Address line 2" size="80px" required="required" type="text"><br>
+      <label for="Student City">City:</label><br>
+      <input id="Student City" required="required" size="80px" type="text"><br>
+      <label for="Student State">State:<br>
+      </label><input id="Student State" required="required" size="80px" type="text"><br>
+      <label for="Student Zip">zip code:<br>
+      </label><input id="Student Zip" required="required" size="80px" type="text"><br>
+      <br>
+      <label for="Comments">Comments:</label><br>
+      <textarea id="Comments" cols="60" rows="5"></textarea><br>
+      <br>
+      <h2>Employer Details</h2>
+      <label for="Employer Name">Name:<br>
+        <input id="Employer Name" size="80px" required="required" type="text"><br>
+      </label> <label for="Primary Contact">Primary Contact:</label><br>
+      <input id="Primary Contact" size="80px" required="required" type="text"><br>
+      <label for="Employer Email">Employer Email:</label><br>
+      <input id="Employer Email" size="80px" placeholder="ex: email@yahoo.com" required="required"
+        type="email"><br>
+      <label for="Employer Phone">Employer Phone:</label><br>
+      <input id="Employer Phone" placeholder="(555)555-5555" required="required"
+        size="80px" type="tel"><br>
+      <br>
+      Employer Location:<br>
+      <label for="Employer Address line 1">Address Line 1:</label><br>
+      <input id="Employer Address line 1" size="80px" required="required" type="text"><br>
+      <label for="Employer Address line 2">Address Line 2:</label><br>
+      <input id="Employer Address line 2" size="80px" type="text"><br>
+      <label for="Employer City">City:</label><br>
+      <input id="Employer City" size="80px" required="required" type="text"><br>
+      <label for="Employer State">State:</label><br>
+      <input id="Employer State" size="80px" required="required" type="text"><br>
+      <label for="Employer Zip Code">Zip Code:</label><br>
+      <input id="Employer Zip" size="80px" required="required" type="text"><br>
+      <br>
+      <label for="Start Date">Internship Start Date: <br>
+        <input id="Start Date" required="required" placeholder="yyyy-mm" type="month"><br>
+      </label> <label for="End Date">Internship End Date:<br>
+        <input id="End Date" required="required" placeholder="yyyy-mm" type="month"><br>
+        <br>
+      </label><label for="End Date"></label>
+      <h2>Instructor Details:</h2>
+      <br>
+      <label for="Instructor Mail">Mail</label> <br>
+      <input id="Instructor Mail" size="80px" placeholder="ex: email@yahoo.com"
+        required="required" type="email"><br>
+      <label for="Instructor First Name">First Name</label><br>
+      <input id="Instructor First Name" size="80px" required="required" type="text"><br>
+      <label for="Instructor Last Name">Last Name<br>
+      </label> <input id="Instructor Last Name" size="80px" required="required"
+        type="text"><br>
+      <br>
+      <input id="Submit" type="submit"><br>
+    </form>
+  </body>
 </html>
