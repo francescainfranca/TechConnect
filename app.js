@@ -9,9 +9,18 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(express.json());
 
-app.get('/student_form.html',function(request,response){
-    response.sendFile('student_form.html')
+app.get('/',function(request,response){
+    response.sendFile('index.html');
 });
+
+app.get('/student_form.html',function(request,response){
+    response.sendFile('student_form.html');
+});
+
+app.post('/',function(request,response){
+    console.log(request.body);
+    response.sendFile(__dirname + '/public/student_dashboard.html');
+})
 
 app.post('/student_form.html',function(request,response){
     console.log(request.body);
