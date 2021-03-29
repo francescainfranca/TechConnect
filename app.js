@@ -1,6 +1,9 @@
 const express = require('express');
-const https = require('https')
-const fs= require('fs')
+
+const https = require('https');
+const fs= require('fs');
+const crypto=require('crypto');
+const cookies=require('cookies');
 
 const port=8080;
 const app = express();
@@ -20,12 +23,13 @@ app.get('/student_form.html',function(request,response){
 });
 
 app.post('/',function(request,response){
-    console.log(request.body);
+    console.log(request.body);//replace with verification
+    //send cookies
     response.sendFile(__dirname + '/public/student_dashboard.html');
 })
 
 app.post('/student_form.html',function(request,response){
-    console.log(request.body);
+    console.log(request.body);//replace with 
 });
 
 https.createServer({
