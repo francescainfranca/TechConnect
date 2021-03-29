@@ -1,4 +1,6 @@
 const express = require('express');
+const https = require('https')
+const fs= require('fs')
 
 const port=8080;
 const app = express();
@@ -26,6 +28,10 @@ app.post('/student_form.html',function(request,response){
     console.log(request.body);
 });
 
-app.listen(port,function(){
+https.createServer({
+    key: fs.readFileSync('./key.pem'),
+    cert: fs.readFileSync('./cert.pem'),
+    passphrase: 'Ch@0t1c_G00d_P0gg1ng'
+},app).listen(port,function(){
     console.log("Server on port 8080");
 });
