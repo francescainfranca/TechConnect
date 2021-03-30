@@ -13,6 +13,9 @@ const cors = require('cors');
 //calling database
 const mongoose = require('mongoose');
 require('dotenv').config();
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 
 //middle ware /routing
 app.use(express.static(__dirname + '/public'));
