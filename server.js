@@ -38,9 +38,9 @@ connection.once('open', () => {
 
 });
 
-const usersRouter = require('./routes/users');
+const usersRouter = require('./user');
 
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
 
 app.post('/',function(request,response){
     console.log(request.body);//replace with verification
@@ -57,5 +57,5 @@ https.createServer({
     cert: fs.readFileSync('./cert.pem'),
     passphrase: 'Ch@0t1c_G00d_P0gg1ng'
 },app).listen(port,function(){
-    console.log("Server on port $(port)");
+    console.log('Server on port '+port);
 });
