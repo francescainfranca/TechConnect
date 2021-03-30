@@ -13,6 +13,8 @@ const cors = require('cors');
 //calling database
 const mongoose = require('mongoose');
 require('dotenv').config();
+
+//fix mongoose :C
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
