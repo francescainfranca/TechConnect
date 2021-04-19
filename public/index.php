@@ -8,7 +8,7 @@ $dbName = "phpproject01";
 mysql_connect($host,$user, $password);
 mysql_select_db($dbName)
 
-if(isset(['username'])){
+if(isset(POST['username'])){
 	$uname=$POST['username'];
 	$password=$_POST['password'];
 
