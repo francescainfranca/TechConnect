@@ -1,3 +1,18 @@
+<?php
+
+$serverName = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dbName = "phpproject01"; 
+
+$conn = mysqlli_connect($serverName, $dBUsername, $dBPassword, $dbName);
+
+if (!$conn) {
+
+    die("Connection failed: " . mysqlli_connect_error());   
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
