@@ -79,7 +79,7 @@ session_start();
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="user_name" id="user_name" name="user_name">
+						<input type="text" class="form-control" placeholder="user_name" id="user_name" name="username">
 						
 					</div>
 					<div class="input-group form-group">
