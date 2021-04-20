@@ -29,6 +29,10 @@ app.get('/',function(request,response){
     response.sendFile('index.html');
 });
 
+app.get('/index.html',function(request,response){
+    response.sendFile('index.html');
+});
+
 app.get('/student_form.html',function(request,response){
     response.sendFile('student_form.html');
 });
