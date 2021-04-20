@@ -6,7 +6,7 @@ $password = "";
 $db = "phpproject01"; 
 
 mysql_connect($host,$user,$password);
-mysql_select_db($dbName)
+mysql_select_db($db);
 
 if(isset($_POST['username'])){
 	$uname=$_POST['username'];
@@ -23,7 +23,7 @@ if(isset($_POST['username'])){
 	}
 	else{
 		echo"You have entered the wrong password"
-		exit()
+		exit();
 	}
 }
 
@@ -47,6 +47,7 @@ if(isset($_POST['username'])){
 <body>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
+		<form method = "POST" action="#">
 		<div class="card">
 			<div class="card-header">
                 
