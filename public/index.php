@@ -1,33 +1,50 @@
-<?php
+<?php 
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "phpproject01"; 
+session_start();
 
-mysql_connect($host,$user,$password);
-mysql_select_db($db);
+	include("config.php");
+	include("function.php");
 
-if(isset($_POST['username'])){
-	$uname=$_POST['username'];
-	$password=$_POST['password'];
 
-	$sql="select * from loginform where user='".$uname."'AND p ass='".$password."' 
-	limit 1";
+	if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		//something was posted
+		$user_name = $_POST['user_name'];
+		$password = $_POST['password'];
 
-	$result=mysql_query($sql);
+		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		{
 
-	if(mysql_num_rows($result)==1){
-		echo"The password is right"
-		
+			//read from database
+			$query = "select * from loginform where user_name = '$user_name' limit 1";
+			$result = mysqli_query($con, $query);
+
+			if($result)
+			{
+				if($result && mysqli_num_rows($result) > 0)
+				{
+
+					$user_data = mysqli_fetch_assoc($result);
+					
+					if($user_data['password'] === $password)
+					{
+
+						$_SESSION['user_id'] = $user_data['user_id'];
+						header("Location: admin_dashboard.html");
+						die;
+					}
+				}
+			}
+			
+			echo "wrong username or password!";
+		}else
+		{
+			echo "wrong username or password!";
+		}
 	}
-	else{
-		echo"You have entered the wrong password"
-		exit();
-	}
-}
 
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -49,7 +66,7 @@ if(isset($_POST['username'])){
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-             <form method = "POST" action="#">  
+			<form method="post"> 
 				<h3> <img src="Northwest_Missouri_State_Bearcats_logo.svg" alt="Logo" style="width:60px;height:60px;"> Northwest Log In</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
@@ -62,7 +79,7 @@ if(isset($_POST['username'])){
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username" id="username" name="username">
+						<input type="text" class="form-control" placeholder="user_name" id="user_name" name="user_name">
 						
 					</div>
 					<div class="input-group form-group">
