@@ -1,72 +1,4 @@
 <?php
-<<<<<<< HEAD
-// Initialize the session
-session_start();
-
-// Include config file
-require_once "config.php";
- 
-// Define variables and initialize with empty values
-$username = $password = "";
-$username_err = $password_err = $login_err = "";
- 
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-    // Validate credentials
-    if(empty($username_err) && empty($password_err)){
-        // Prepare a select statement
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
-        
-        if($stmt = $mysqli->prepare($sql)){
-            // Bind variables to the prepared statement as parameters
-            $stmt->bind_param("s", $param_username);
-            
-            // Set parameters
-            $param_username = $username;
-            
-            // Attempt to execute the prepared statement
-            if($stmt->execute()){
-                // Store result
-                $stmt->store_result();
-                
-                // Check if username exists, if yes then verify password
-                if($stmt->num_rows == 1){                    
-                    // Bind result variables
-                    $stmt->bind_result($id, $username, $hashed_password);
-                    if($stmt->fetch()){
-                        if(password_verify($password, $hashed_password)){
-                            // Password is correct, so start a new session
-                            session_start();
-                            
-                            // Store data in session variables
-                            $_SESSION["loggedin"] = true;
-                            $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;                            
-                            
-                            // Redirect user to welcome page
-                            header("location: welcome.php");
-                        } else{
-                            // Password is not valid, display a generic error message
-                            $login_err = "Invalid username or password.";
-                        }
-                    }
-                } else{
-                    // Username doesn't exist, display a generic error message
-                    $login_err = "Invalid username or password.";
-                }
-            } else{
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-
-            // Close statement
-            $stmt->close();
-        }
-    }
-    
-    // Close connection
-    $mysqli->close();
-=======
 
 $host = "localhost";
 $user = "root";
@@ -80,7 +12,7 @@ if(isset($_POST['username'])){
 	$uname=$_POST['username'];
 	$password=$_POST['password'];
 
-	$sql="select * from loginform where user='".$uname."'AND Pass='".$password."' 
+	$sql="select * from loginform where user='".$uname."'AND p ass='".$password."' 
 	limit 1";
 
 	$result=mysql_query($sql);
@@ -93,7 +25,6 @@ if(isset($_POST['username'])){
 		echo"You have entered the wrong password"
 		exit();
 	}
->>>>>>> parent of 41647c3 (Update index.php)
 }
 
 ?>
@@ -114,41 +45,11 @@ if(isset($_POST['username'])){
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-<<<<<<< HEAD
-    <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
-
-        <?php 
-        if(!empty($login_err)){
-            echo '<div class="alert alert-danger">' . $login_err . '</div>';
-        }        
-        ?>
-
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            </div>    
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
-            </div>
-          
-        </form>
-    </div>
-=======
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
-		<form method = "POST" action="#">
 		<div class="card">
 			<div class="card-header">
-                
+             <form method = "POST" action="#">  
 				<h3> <img src="Northwest_Missouri_State_Bearcats_logo.svg" alt="Logo" style="width:60px;height:60px;"> Northwest Log In</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
@@ -189,6 +90,5 @@ if(isset($_POST['username'])){
 		</div>
 	</div>
 </div>
->>>>>>> parent of 41647c3 (Update index.php)
 </body>
 </html>
