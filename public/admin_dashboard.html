@@ -58,6 +58,33 @@
                     <li class="nav-item"><a href="student_dashboard.html" class="nav-link"><b>Dashboard</b></a></li>
                     <li class="nav-item"><a href="student.html" class="nav-link">Students</a></li>
                     <li class="nav-item"><a href="student_application.html" class="nav-link">Application Reports</a></li>
+                    <li class="nav-item"><div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-chevron-circle-down"></i> Tech connect</button>
+                        <div id="myDropdown" class="dropdown-content">
+                         
+                          <a href="#">Logout</a>
+                        </div>
+                      </div>
+                    <script>/* When the user clicks on the button,
+                      toggle between hiding and showing the dropdown content */
+                      function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                      }
+                      
+                      // Close the dropdown menu if the user clicks outside of it
+                      window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                              openDropdown.classList.remove('show');
+                            }
+                          }
+                        }
+                      }</script>
+                    </li>
                     
 
                     
