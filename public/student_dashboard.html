@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
-        <link rel="stylesheet" href="student.css">
-        <script src="webpages.js"></script>
-        <link rel="stylesheet" href="side_gui.css"></style>
-        <link rel="shortcut icon" href="favicon.ico">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+    <script src="webpages.js"></script>
+    <link rel="stylesheet" href="side_gui.css"></style>
+    <link rel="shortcut icon" href="favicon.ico">
 
-        <!-- Bootstrap 4.5 CSS -->
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="dashboard.css">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Didact+Gothic&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chakra+Petch:wght@500;700&family=Didact+Gothic&display=swap" rel="stylesheet">
-        <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
-        <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
-      </head>
-    <body>
-        <!-- Navigation -->
-        <embed type="text/html" src="navigation.html" width="100%" height="250px">
+<!-- Bootstrap 4.5 CSS -->
+<link rel="stylesheet" href="bootstrap.min.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="dashboard.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Didact+Gothic&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chakra+Petch:wght@500;700&family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       
+        <div class="top-bar">
+            <div class="col text-right">
+                <p><a href="student_dashboard.html" target="_parent"><i class="fas fa-user"></i>Tech Connect</a></p>
+            </div>
+        </div>
+        
 
-        <div class="main">
-             
+    </header>
+
+
+    <nav class="navbar bg-light navbar-light navbar-expand-lg container">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="logo1.png" alt="Logo" title="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+    
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="student.html" class="nav-link" target="_parent">Home</a></li>
+                    <li class="nav-item"><a href="student_dashboard.html" class="nav-link" target="_parent"><b>Dashboard</b></a></li>
+                    <li class="nav-item"><a href="student_application.html" class="nav-link" target="_parent">Internship Application</a></li>
+        
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+        <div class="main">   
         </div>
             <div class="col-md-12 offset-md-12">
                 <div class="card">
                   <div class="card-body">
-                    <div id="piechart"></div>
-                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                     <script type="text/javascript">
-                // Load google charts
-                        google.charts.load('current', {'packages':['corechart']});
-                        google.charts.setOnLoadCallback(drawChart);
-                
-                // Draw the chart and set the chart values
-                        function drawChart() {
-                        var data = google.visualization.arrayToDataTable([
-                        ['Task', 'Hours per Day'],
-                        ['Completed', 1],
-                        ['Pending', 1],
-                        ['Ongoing', 1],
-                        ]);
-                
-                  // Optional; add a title and set the width and height of the chart
-                        var options = {'title':'My Internship Status', 'width':550, 'height':400};
-                
-                  // Display the chart inside the <div> element with id="piechart"
-                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                        chart.draw(data, options);
-                }
-                </script>
-                  </div>
-                  <h2 style="padding-left:2%">Applications</h2>
+                    <h2 style="padding-left:2%">Applications</h2>
 
                   <div class="col-md-10 col-md-10">
                     <div class="card">
@@ -116,6 +116,38 @@
                   </div>
                   </div>
                   </div>
+                  <div class="col-md-10 offset-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                    <div id="piechart"></div>
+                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                     <script type="text/javascript">
+                // Load google charts
+                        google.charts.load('current', {'packages':['corechart']});
+                        google.charts.setOnLoadCallback(drawChart);
+                
+                // Draw the chart and set the chart values
+                        function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                        ['Task', 'Hours per Day'],
+                        ['Completed', 0],
+                        ['Pending', 1],
+                        ['Ongoing', 1],
+                        ]);
+                
+                  // Optional; add a title and set the width and height of the chart
+                        var options = {'title':'My Internship Status', 'width':550, 'height':400};
+                
+                  // Display the chart inside the <div> element with id="piechart"
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                        chart.draw(data, options);
+                }
+                </script>
+                  </div>
+                  </div>
+                </div>
+                </div>
+                 
                   </div>
                   </div>
                 </div>
