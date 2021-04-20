@@ -19,7 +19,7 @@ if(isset($_POST['username'])){
 
 	if(mysql_num_rows($result)==1){
 		echo"The password is right"
-		exit();
+		
 	}
 	else{
 		echo"You have entered the wrong password"
